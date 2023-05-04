@@ -1,12 +1,12 @@
 #include <iostream>
 #include <string>
-#include "welcomeText/welcomeText.h"
+#include "welcomeText/welcomeText.cpp"
 
 using namespace std;
 
 
 int main () {
-  void welcomeText();
+  welcomeText();
 
 
   return 0;

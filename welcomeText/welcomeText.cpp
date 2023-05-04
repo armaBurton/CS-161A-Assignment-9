@@ -1,5 +1,5 @@
 #include <iostream>
-#include "welcomeText.h"
+// #include "welcomeText.h"
 
 using namespace std;
 
