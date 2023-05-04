@@ -17,8 +17,8 @@ int readInt(string prompt){
     } else if (number > 10){
       cout << "The number of assignments you have entered is too large.\n";
     } 
-
-  } while ((10 < number < 0));
+      // cout << !isnan(number) << true << endl;
+  } while (number < 0 || number > 10);
 
   
 
