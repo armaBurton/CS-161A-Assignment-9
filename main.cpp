@@ -12,14 +12,20 @@ int main () {
   double assignmentGrade {},
          sumOfAssignmentGrade {};
   ostringstream oss;
+  string templateLiteral {},
+         queryConstructor {};
 
   welcomeText();
-  numberOfAssignments = readInt("Enter the number of assignments (0 to 10): ");
+  numberOfAssignments = readInt("Enter the number of assignments (0 to ", 10);
+  cout << endl;
   for(int i = 0; i < numberOfAssignments;i++){
-    oss << "Enter score " << i + 1 << ": ";
-    cin >> assignmentGrade;
+    queryConstructor = "Enter score ";
+    queryConstructor += to_string(i + 1);
+    queryConstructor += " (0 to ";
+    assignmentGrade = readInt(queryConstructor, 4);
     sumOfAssignmentGrade += assignmentGrade;
   }
+  sumOfAssignmentGrade /= numberOfAssignments;
   cout << sumOfAssignmentGrade << endl;
 
   return 0;
