@@ -25,10 +25,9 @@ int readInt(string prompt, int max){
           break;
         }
       }
-
-      // if (number < 0 || number > 10){
-      //     cout << str;
-      // }  
+      if (number < 0 || number > max){
+        cout << "You have entered an invalid value.";
+      }
 
   } while (number < 0 || number > max);
 
