@@ -6,7 +6,12 @@
 using namespace std;
 
 int readInt(string prompt){
-  
+  int number {};
+  cout << "readInt\n";
+  cout << prompt;
+  cin >> number;
+  cout << number;
+  return number;
 }
 
 // int readInt(string prompt, int max){
