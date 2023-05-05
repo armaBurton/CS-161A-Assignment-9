@@ -7,12 +7,11 @@ using namespace std;
 
 
 int main () {
-  int consoleInt {};
+  int numberOfAssignments {};
 
   welcomeText();
-    consoleInt = readInt("Enter the number of assignments (0 to 10): ");
-    cout << endl
-         << consoleInt << endl;
+    numberOfAssignments = readInt("Enter the number of assignments (0 to 10): ");
+
 
 
   return 0;
