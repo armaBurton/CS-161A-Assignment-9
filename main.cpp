@@ -25,22 +25,14 @@ int main () {
     queryConstructor += to_string(i + 1);
     queryConstructor += ": ";
     assignmentGrade = readInt(queryConstructor);
-    if (assignmentGrade < 0 || assignmentGrade > 4){
-      i--;
-      assignmentGrad
+    while (assignmentGrade < 0 || assignmentGrade > 4){
+      cout << "Score must should be a value 0 - 4, inclusive.\n";
+      assignmentGrade = readInt(queryConstructor);
     }
     sumOfAssignmentGrade += assignmentGrade;
   }
   
-  // for(int i = 0; i < numberOfAssignments;i++){
-    //   queryConstructor = "Enter score ";
-    //   queryConstructor += to_string(i + 1);
-    //   queryConstructor += " (0 to ";
-    //   assignmentGrade = readInt(queryConstructor, 4);
-  //   sumOfAssignmentGrade += assignmentGrade;
-  // }
-  // sumOfAssignmentGrade /= numberOfAssignments;
-  // cout << sumOfAssignmentGrade << endl;
+
 
   return 0;
 }
