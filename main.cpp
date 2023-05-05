@@ -20,11 +20,23 @@ int main () {
     numberOfAssignments = readInt("Please enter a value between 0 - 10: ");
   }
 
+  for (int i = 0; i < numberOfAssignments; i++){
+    queryConstructor = "Enter score ";
+    queryConstructor += to_string(i + 1);
+    queryConstructor += ": ";
+    assignmentGrade = readInt(queryConstructor);
+    if (assignmentGrade < 0 || assignmentGrade > 4){
+      i--;
+      assignmentGrad
+    }
+    sumOfAssignmentGrade += assignmentGrade;
+  }
+  
   // for(int i = 0; i < numberOfAssignments;i++){
-  //   queryConstructor = "Enter score ";
-  //   queryConstructor += to_string(i + 1);
-  //   queryConstructor += " (0 to ";
-  //   assignmentGrade = readInt(queryConstructor, 4);
+    //   queryConstructor = "Enter score ";
+    //   queryConstructor += to_string(i + 1);
+    //   queryConstructor += " (0 to ";
+    //   assignmentGrade = readInt(queryConstructor, 4);
   //   sumOfAssignmentGrade += assignmentGrade;
   // }
   // sumOfAssignmentGrade /= numberOfAssignments;

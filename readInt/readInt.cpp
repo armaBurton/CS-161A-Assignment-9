@@ -10,7 +10,7 @@ int readInt(string prompt){
   cout << "readInt\n";
   cout << prompt;
   cin >> number;
-  cout << number;
+
   return number;
 }
 
