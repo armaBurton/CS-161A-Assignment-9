@@ -2,7 +2,7 @@
 #include <string>
 #include "welcomeText/welcomeText.cpp"
 #include "readInt/readInt.cpp"
-#include "readScore/readScore.cpp"
+// #include "readScore/readScore.cpp"
 #include "assignAverage/assignAverage.cpp"
 
 using namespace std;
@@ -12,7 +12,9 @@ int main () {
   int numberOfAssignments {};
   double assignmentGrade {},
          sumOfAssignmentGrade {},
-         average {};
+         average {},
+         midterm {},
+         final {};
   string templateLiteral {},
          queryConstructor {};
 
@@ -30,7 +32,7 @@ int main () {
 
   average = assignAverage(numberOfAssignments);
 
-
+  cout << "Average " << average << endl;
 
   //loop through numberOfAssignment for collection of assignment grades. move this to the function assignAverage()
   // for (int i = 0; i < numberOfAssignments; i++){
