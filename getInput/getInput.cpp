@@ -1,10 +1,11 @@
 #include <iostream>
-#include "../readScore/readScore.cpp"
+#include <string>
 
 using namespace std;
 
-void getInput (double midTermScore, double finalExamScore){
+void getInput (double &midTermScore, double &finalExamScore){
+  cout << "getInput" << endl;
   double midterm {}, final {};
-  cout << "Enter your midterm score: " ;
-  cin >> midterm;
+  readScore("Enter your midterm score: ", midTermScore);
+  readScore("Enter your final score: ", finalExamScore);
 }
