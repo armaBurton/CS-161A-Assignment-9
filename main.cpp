@@ -25,12 +25,14 @@ int main () {
     queryConstructor = "Enter score ";
     queryConstructor += to_string(i + 1);
     queryConstructor += ": ";
-    assignmentGrade = readInt(queryConstructor);
-    while (assignmentGrade < 0 || assignmentGrade > 4){
-      cout << "Score must should be a value 0 - 4, inclusive.\n";
-      assignmentGrade = readInt(queryConstructor);
-    }
-    sumOfAssignmentGrade += assignmentGrade;
+
+    //refactor to include readScore(string prompt, double &num) when reading scores inputted from user.
+    // assignmentGrade = readInt(queryConstructor);
+    // while (assignmentGrade < 0 || assignmentGrade > 4){
+    //   cout << "Score must should be a value 0 - 4, inclusive.\n";
+    //   assignmentGrade = readInt(queryConstructor);
+    // }
+    // sumOfAssignmentGrade += assignmentGrade;
   }
   
 
