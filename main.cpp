@@ -3,6 +3,7 @@
 #include "welcomeText/welcomeText.cpp"
 #include "readInt/readInt.cpp"
 #include "readScore/readScore.cpp"
+#include "assignAverage/assignAverage.cpp"
 
 using namespace std;
 
@@ -10,7 +11,8 @@ using namespace std;
 int main () {
   int numberOfAssignments {};
   double assignmentGrade {},
-         sumOfAssignmentGrade {};
+         sumOfAssignmentGrade {},
+         average {};
   string templateLiteral {},
          queryConstructor {};
 
@@ -26,13 +28,17 @@ int main () {
     numberOfAssignments = readInt("Please enter a value between 0 - 10: ");
   }
 
-  //loop through numberOfAssignment for collection of assignment grades.
-  for (int i = 0; i < numberOfAssignments; i++){
-    queryConstructor = "Enter score ";
-    queryConstructor += to_string(i + 1);
-    queryConstructor += ": ";
-    readScore(queryConstructor, sumOfAssignmentGrade);
-  }
+  average = assignAverage(numberOfAssignments);
+
+
+
+  //loop through numberOfAssignment for collection of assignment grades. move this to the function assignAverage()
+  // for (int i = 0; i < numberOfAssignments; i++){
+  //   queryConstructor = "Enter score ";
+  //   queryConstructor += to_string(i + 1);
+  //   queryConstructor += ": ";
+  //   readScore(queryConstructor, sumOfAssignmentGrade);
+  // }
   
 
 
