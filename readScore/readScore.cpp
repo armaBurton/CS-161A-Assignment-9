@@ -13,5 +13,4 @@ void readScore(string prompt, double &num){
     cin >> scoreInput;
   }
   num += scoreInput;
-
 }
