@@ -7,6 +7,7 @@ using namespace std;
 double assignAverage(int numAssigns){
   string queryConstructor {};
   double sumOfAssignmentGrade;
+
   //loop through numberOfAssignment for collection of assignment grades. move this to the function assignAverage()
   for (int i = 0; i < numAssigns; i++){
     queryConstructor = "Enter score ";
@@ -15,5 +16,6 @@ double assignAverage(int numAssigns){
     readScore(queryConstructor, sumOfAssignmentGrade);
   }
 
+  //return average
   return sumOfAssignmentGrade / numAssigns;
 }
