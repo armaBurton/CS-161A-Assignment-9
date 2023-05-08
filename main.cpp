@@ -2,6 +2,7 @@
 #include <string>
 #include "welcomeText/welcomeText.cpp"
 #include "readInt/readInt.cpp"
+#include "readScore/readScore.cpp"
 
 using namespace std;
 
@@ -25,7 +26,8 @@ int main () {
     queryConstructor = "Enter score ";
     queryConstructor += to_string(i + 1);
     queryConstructor += ": ";
-
+    readScore(queryConstructor, sumOfAssignmentGrade);
+    cout << sumOfAssignmentGrade << endl;
     //refactor to include readScore(string prompt, double &num) when reading scores inputted from user.
     // assignmentGrade = readInt(queryConstructor);
     // while (assignmentGrade < 0 || assignmentGrade > 4){
