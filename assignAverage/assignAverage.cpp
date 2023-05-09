@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <math.h>
 #include "../readScore/readScore.cpp"
 
 using namespace std;
