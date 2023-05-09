@@ -4,6 +4,6 @@
 using namespace std;
 
 void getInput (double &midTermScore, double &finalExamScore){
-  readScore("Enter your midterm score: ", midTermScore);
-  readScore("Enter your final score: ", finalExamScore);
+  readScore("Enter your midterm exam score: ", midTermScore);
+  readScore("Enter your final exam score: ", finalExamScore);
 }

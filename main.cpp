@@ -36,14 +36,14 @@ int main () {
   //collect scores for midterm and final
   getInput(midterm, final);
 
-  cout << endl
-       << "Assignment Average " << average << endl
-       << "Midterm " << midterm << endl
-       << "Final " << final << endl;
+  // cout << endl
+  //      << "Assignment Average " << average << endl
+  //      << "Midterm " << midterm << endl
+  //      << "Final " << final << endl;
 
   calculatedFinalScore = calcFinalScore(average, midterm, final);
 
-  cout << calculatedFinalScore << endl;
+  cout << "Your Final Numeric score is: " << calculatedFinalScore << endl;
 
 
 
