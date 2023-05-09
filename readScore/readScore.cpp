@@ -17,7 +17,7 @@ void readScore(string prompt, double &num){
   //   } else if (!cin.fail()){
   //     break;
   //   }
-  }
+  // }
   while(scoreInput < 0 || scoreInput > 4){
     cout << "Score must be a value of 0 - 4.\n";
     cout << prompt;
