@@ -37,7 +37,9 @@ int main () {
   //collect scores for midterm and final
   getInput(midterm, final);
 
+  //calculate numerical score
   calculatedFinalScore = calcFinalScore(average, midterm, final);
+  //use numerical score to find letter score
   calcLetterGrade(calculatedFinalScore, letterGrade);
   
   cout << endl
