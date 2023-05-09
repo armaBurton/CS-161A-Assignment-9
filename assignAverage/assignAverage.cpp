@@ -16,6 +16,7 @@ double assignAverage(int numAssigns){
     queryConstructor += ": ";
     readScore(queryConstructor, sumOfAssignmentGrade);
   }
+  cout << endl;
 
   //return average
   return sumOfAssignmentGrade / numAssigns;
