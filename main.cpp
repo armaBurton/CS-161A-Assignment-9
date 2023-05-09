@@ -10,13 +10,11 @@ using namespace std;
 
 int main () {
   int numberOfAssignments {};
-  double assignmentGrade {},
-         sumOfAssignmentGrade {},
+  double sumOfAssignmentGrade {},
          average {},
          midterm {},
          final {};
-  string templateLiteral {},
-         queryConstructor {};
+  string queryConstructor {};
 
   //Welcome prompt
   welcomeText();
