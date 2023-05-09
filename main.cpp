@@ -4,6 +4,7 @@
 #include "readInt/readInt.cpp"
 #include "assignAverage/assignAverage.cpp"
 #include "getInput/getInput.cpp"
+#include "calcFinalScore/calcFinalScore.cpp"
 
 using namespace std;
 
@@ -13,7 +14,8 @@ int main () {
   double sumOfAssignmentGrade {},
          average {},
          midterm {},
-         final {};
+         final {},
+         calculatedFinalScore {};
   string queryConstructor {};
 
   //Welcome prompt
@@ -38,6 +40,12 @@ int main () {
        << "Assignment Average " << average << endl
        << "Midterm " << midterm << endl
        << "Final " << final << endl;
+
+  calculatedFinalScore = calcFinalScore(average, midterm, final);
+
+  cout << calculatedFinalScore << endl;
+
+
 
   return 0;
 }
